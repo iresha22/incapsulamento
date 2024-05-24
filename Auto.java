@@ -1,26 +1,17 @@
 public class Auto {
+    //le variabili instance
     private String cilindrata;
     private String targa;
     private String marca;
     private String modello;
-
-    @Override
-    public String toString() {
-        return "Auto{" +
-                "cilindrata='" + cilindrata + '\'' +
-                ", targa='" + targa + '\'' +
-                ", marca='" + marca + '\'' +
-                ", modello='" + modello + '\'' +
-                '}';
-    }
-
+    // il costruttore
     public Auto(String cilindrata,String targa,String marca,String modello){
         this.marca = marca;
         this.modello = modello;
         this.cilindrata = cilindrata;
         this.targa = targa;
     }
-
+    // i getter e setter
     public String getMarca(){
        return marca;
     }
@@ -50,6 +41,16 @@ public class Auto {
 
     public void setModello(String modello) {
         this.modello = modello;
+    }
+    //  il override
+     @Override
+    public String toString() {
+        return "Auto{" +
+                "cilindrata='" + cilindrata + '\'' +
+                ", targa='" + targa + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modello='" + modello + '\'' +
+                '}';
     }
 }
 
